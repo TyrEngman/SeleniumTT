@@ -16,6 +16,7 @@ password = driver.find_element(By.ID, "password")
 # Verificar los placeholders en español
 assert email.get_attribute("placeholder") == "Correo electrónico", "❌ El placeholder del campo 'email' es incorrecto"
 assert password.get_attribute("placeholder") == "Contraseña", "❌ El placeholder del campo 'contraseña' es incorrecto"
+print("Pruebas exitosas!")
 
 # Cerrar el navegador
 driver.quit()
